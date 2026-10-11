@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <JobDef>
+    <defName>TietoTree_TieToTree</defName>
+    <driverClass>Tie_to_Tree.JobDriver_TieToTree</driverClass>
+    <reportString>tying TargetA to a tree.</reportString>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>TietoTree_TreeUntie</defName>
+    <driverClass>Tie_to_Tree.JobDriver_TreeUntie</driverClass>
+    <reportString>untying TargetA from a tree.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>TietoTree_FeedTiedInfant</defName>
+    <driverClass>Tie_to_Tree.JobDriver_FeedTiedInfant</driverClass>
+    <reportString>feeding TargetA.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+
+</Defs>

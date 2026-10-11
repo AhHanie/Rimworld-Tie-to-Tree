@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <TietoTree.LoadingLabel>Tie to Tree Loading</TietoTree.LoadingLabel>
+    <TietoTree.SettingsTitle>Tie to Tree</TietoTree.SettingsTitle>
+    <TietoTree.SettingsEscapeChance>Escape chance per tied prisoner per day: {0}</TietoTree.SettingsEscapeChance>
+    <TietoTree.SettingsEscapeChanceDesc>The chance that a prisoner tied to a tree breaks free.</TietoTree.SettingsEscapeChanceDesc>
+    <TietoTree.SettingsEscapeChanceExplain>This is a chance per tied prisoner per in-game day (60,000 ticks). Each tied prisoner gets one roll per day, at a random time of that day. At 0% a tied prisoner never escapes; at 100% a tied prisoner escapes at the next scheduled roll.</TietoTree.SettingsEscapeChanceExplain>
+    <TietoTree.SettingsDebugLogging>Enable debug logging</TietoTree.SettingsDebugLogging>
+    <TietoTree.SettingsDebugLoggingDesc>Write extra diagnostic messages about tying and untying prisoners to the log.</TietoTree.SettingsDebugLoggingDesc>
+    <TietoTree.SettingsReset>Reset to defaults</TietoTree.SettingsReset>
+    <TietoTree.CannotTieToTree>Cannot tie to tree</TietoTree.CannotTieToTree>
+    <TietoTree.NoTreeNearby>no suitable tree nearby</TietoTree.NoTreeNearby>
+    <TietoTree.TreeNoLongerValid>that tree or spot is no longer available</TietoTree.TreeNoLongerValid>
+    <TietoTree.TieToTree>Tie {0} to a tree...</TietoTree.TieToTree>
+    <TietoTree.TieToTreeChance>Tie {0} to a tree... ({2} chance of success)</TietoTree.TieToTreeChance>
+    <TietoTree.TreeOption>{0} ({1} cells away)</TietoTree.TreeOption>
+    <TietoTree.PickTreeTitle>Choose a tree</TietoTree.PickTreeTitle>
+    <TietoTree.UntieFromTree>Untie {0} from tree</TietoTree.UntieFromTree>
+    <TietoTree.CommandUntieLabel>Untie</TietoTree.CommandUntieLabel>
+    <TietoTree.CommandUntieDesc>Have a colonist untie this prisoner from the tree. The prisoner stays a prisoner.</TietoTree.CommandUntieDesc>
+    <TietoTree.PickUntiePawnTitle>Who should untie them?</TietoTree.PickUntiePawnTitle>
+    <TietoTree.NoOneToUntie>No colonist can reach this prisoner to untie them.</TietoTree.NoOneToUntie>
+    <TietoTree.TiedToInspect>Tied to {0}</TietoTree.TiedToInspect>
+    <TietoTree.MessageBrokeFree>{0} broke free from the tree and is trying to escape!</TietoTree.MessageBrokeFree>
+</LanguageData>
