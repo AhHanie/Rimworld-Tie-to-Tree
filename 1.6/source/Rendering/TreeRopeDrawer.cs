@@ -25,7 +25,8 @@ namespace Tie_to_Tree
                 bodyCenter.z -= lift;
             }
 
-            bodyCenter.y = AltitudeLayer.PawnRope.AltitudeFor() + 0.01f;
+            TiedTreeDrawAltitude.TryGetLift(pawn, binding, out float altitudeLift);
+            bodyCenter.y = AltitudeLayer.PawnRope.AltitudeFor() + 0.01f + altitudeLift;
             Matrix4x4 matrix = Matrix4x4.TRS(bodyCenter, Quaternion.identity, BodyRopeScale);
             Graphics.DrawMesh(MeshPool.plane10, matrix, BodyRopeMat, 0);
         }
