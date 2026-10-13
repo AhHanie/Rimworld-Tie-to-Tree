@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TietoTree_TreeRestraint</defName>
+    <label>tree restraint</label>
+    <description>An unseen anchor marking the spot where a prisoner is tied beside a tree.</description>
+    <thingClass>Tie_to_Tree.Building_TreeRestraint</thingClass>
+    <size>(1,1)</size>
+    <passability>Standable</passability>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <selectable>false</selectable>
+    <useHitPoints>false</useHitPoints>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>TieToTree/Anchor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Comfort>0.2</Comfort>
+      <BedRestEffectiveness>0.7</BedRestEffectiveness>
+      <SurgerySuccessChanceFactor>0.6</SurgerySuccessChanceFactor>
+    </statBases>
+    <building>
+      <isEdifice>false</isEdifice>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+      <allowAutoroof>false</allowAutoroof>
+      <ai_chillDestination>false</ai_chillDestination>
+      <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <canPlaceOverImpassablePlant>true</canPlaceOverImpassablePlant>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_canBeMedical>false</bed_canBeMedical>
+      <bed_DisplayOwnerType>false</bed_DisplayOwnerType>
+      <bed_DisplayOwnersInInspectString>false</bed_DisplayOwnersInInspectString>
+      <bed_countsForBedroomOrBarracks>false</bed_countsForBedroomOrBarracks>
+      <bed_emptyCountsForBarracks>false</bed_emptyCountsForBarracks>
+      <bed_UseSheetColor>false</bed_UseSheetColor>
+      <bed_maxBodySize>9999</bed_maxBodySize>
+      <buildingTags>
+        <li>Bed</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

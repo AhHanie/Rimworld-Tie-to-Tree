@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThinkTreeDef>
+    <defName>TietoTree_TiedPrisoner</defName>
+    <insertTag>Humanlike_PostMentalState</insertTag>
+    <insertPriority>100</insertPriority>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="Tie_to_Tree.JobGiver_TiedToTree" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+</Defs>
