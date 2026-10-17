@@ -47,7 +47,7 @@ namespace Tie_to_Tree
                 return false;
             }
 
-            if (tree.Destroyed || !tree.Spawned || tree.Map != expectedMap || tree.IsBurning())
+            if (!TreeBindingUtility.IsTreeDef(tree) || tree.Destroyed || !tree.Spawned || tree.Map != expectedMap || tree.IsBurning())
             {
                 return false;
             }

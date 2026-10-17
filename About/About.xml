@@ -8,7 +8,7 @@
         <li>1.7</li>
     </supportedVersions>
     <description>Tie prisoners outdoors to a nearby tree that is at least 80% grown. Tied prisoners stay normal colony prisoners, so wardens still feed, tend and interact with them. Each day a tied prisoner has a small chance to break free and try to escape. The chance can be changed in the mod settings.</description>
-    <modVersion>1.2.0</modVersion>
+    <modVersion>1.2.1</modVersion>
     <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3818011865</url>
     <modDependencies>
         <li>

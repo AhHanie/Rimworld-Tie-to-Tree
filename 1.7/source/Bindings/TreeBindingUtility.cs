@@ -28,9 +28,18 @@ namespace Tie_to_Tree
 
         private static readonly Dictionary<long, KeyValuePair<int, bool>> candidateCache = new Dictionary<long, KeyValuePair<int, bool>>();
 
+        public static bool IsTreeDef(Plant plant)
+        {
+            return plant != null
+                && plant.def.plant != null
+                && plant.def.plant.IsTree
+                && !plant.def.plant.isStump
+                && !(plant is DeadPlant);
+        }
+
         public static bool IsTreeUsable(Plant tree, Pawn captor, Pawn target)
         {
-            if (tree == null || !tree.Spawned || tree.Destroyed || tree.def.plant == null || !tree.def.plant.IsTree)
+            if (!IsTreeDef(tree) || !tree.Spawned || tree.Destroyed)
             {
                 return false;
             }
@@ -127,7 +136,7 @@ namespace Tie_to_Tree
             for (int i = 0; i < plants.Count; i++)
             {
                 Plant tree = plants[i] as Plant;
-                if (tree == null || tree.def.plant == null || !tree.def.plant.IsTree)
+                if (!IsTreeDef(tree))
                 {
                     continue;
                 }
